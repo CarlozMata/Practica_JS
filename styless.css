@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+}
+/*HEADER*/
+header {
+  background-color: blueviolet;
+  height: 100px;
+  text-align: center;
+}
+header div { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+header button {
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+}
+/*SECTION GLOBAL*/
+.global {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*SECTION STUDENT*/
+.alumn {
+  background-color: gold;
+  padding: 10px;
+  width: 50%;
+  min-width: 470px;
+  height: auto;
+} 
+
+/*SECTION CALCULATOR*/
+.calculator { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: wheat; 
+  min-width: 470px;
+  width: 50%;
+  height: auto;
+}
+.calculator-box {
+  display: flex;
+  justify-content: center;
+}
+#result {
+  border: 1px solid black;
+  box-sizing: content-box;
+  display: inline-block;
+  width: 200px;  
+  height: 18px;
+  text-align: center; 
+  
+}
+.calculator-left {
+  padding: 10px;
+
+} 
+.calculator-right {
+  padding: 10px 0;
+} 
+
+#btnNum {
+  width: 40px;
+  min-width: 10px; 
+  height: 40px;
+  margin-bottom: 5px;
+}
+.btnNum {
+  width: 85px;
+  height: 40px;
+}
+
+/*FOOTER*/
+footer {
+  background-color:turquoise;
+}
+
+
+
+
+
+.caja {
+  background-color: red;
+}
+.caja.azul {
+  background-color: blue;
+}

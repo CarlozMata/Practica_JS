@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styless.css">
+  <title>Practica JS</title>
+</head> 
+<body>
+  <header id="backgroundHeader">
+    <div>
+      <h1>Programa Web</h1>
+      <button onclick="changeColor('blue');">Azul</button>
+      <button onclick="changeColor('red');">Rojo</button>
+    </div>
+  </header>
+<section class="global">  
+  <section class="alumn">
+    <h2>Datos de Alumno</h2>
+    <form action="" method="post">
+      <label>Ingresa tu Nombre:</label>
+      <input type="text" placeholder="¿Cual es tu nombre?" name="name" class="data">
+      <label>Ingresa tu Apellido:</label>
+      <input type="text" placeholder="¿Cual es tu apellido?" name="name" class="data">
+      <input type="submit" class="btnSave" name="=" value="Save">
+
+    </form>
+  </section>
+  <section class="calculator">
+    <h2>Calculadora</h2>
+      <form>
+        <br><label>El resultado es:</label><br>
+        <span id="result"></span><br>
+        <div class="calculator-box">
+        <div class="calculator-left">
+          <div class="display"></div>
+          <div id="valor-anterior"></div>
+          <div id="valor-actual"></div>
+        <button class="btnNum btn_7 numero">7</button>
+        <button class="btnNum btn_8 numero">8</button>
+        <button class="btnNum btn_9 numero">9</button><br>
+        <button class="btnNum btn_4 numero">4</button>
+        <button class="btnNum btn_5">5</button>
+        <button class="btnNum btn_6">6</button><br>
+        <button class="btnNum btn_1">1</button>
+        <button class="btnNum btn_2">2</button>
+        <button class="btnNum btn_3">3</button><br>
+        <button class="btnNum btn_0">0</button>
+        <button class="btnNum btn_00">00</button>
+        <button class="btnNum point">.</button>
+        </div>
+        <div class="calculator-right">
+        <button class="btnNum btn_CE">CE</button>
+        <button class="btnNum btn_AC">AC</button><br>
+        <button class="btnNum btn_sum">+</button>
+        <button class="btnNum btn_rest">-</button>
+        <button class="btnNum btn_mult">x</button><br>
+        <button class="btnNum btn_div">/</button>
+        <button class="btnNum btn_equal">=</button>
+        </div>
+      </form>
+    </div>
+    <button id="btnPrueba">Click</button>
+  </section> 
+  </section>
+  <footer>@CarlozMata</footer>  
+</body>
+<script src="./main_estilos.js"></script>
+<script src="./main_student.js"></script>
+<script src="./main_calculator.js"></script>
+</html>
