@@ -3,10 +3,10 @@ const displayValorActual = document.getElementById('valor-actual');
 const botonesNumeros = document.querySelectorAll('.numero');
 const botonesOperadores = document.querySelectorAll('.operador');
 
-const display = new Display(displayValorAnterior, displayValorActual);
+const displays = new Display(displayValorAnterior, displayValorActual);
 
 botonesNumeros.forEach(boton => {
-  boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
+  boton.addEventListener('click', () => displays.agregarNumero(boton.innerHTML));
 });
 
 botonesOperadores.forEach(boton => {
