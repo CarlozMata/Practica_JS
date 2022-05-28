@@ -5,7 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styless.css">
-  <title>Practica JS</title>
+  <script src="./main_estilos.js"></script>
+  <script src="./main_student.js"></script>
+  <script src="./main_calculator.js"></script>
+  <script src="./Calculadora.js"></script>
+  <script src="./display.js"></script>
+  <script src="./index.js" defer></script>
+    <title>Practica JS</title>
 </head> 
 <body>
   <header id="backgroundHeader">
@@ -31,42 +37,38 @@
     <h2>Calculadora</h2>
       <form>
         <br><label>El resultado es:</label><br>
-        <span id="result"></span><br>
+        <span id="result"></span><br> 
         <div class="calculator-box">
         <div class="calculator-left">
           <div class="display"></div>
           <div id="valor-anterior"></div>
           <div id="valor-actual"></div>
-        <button class="btnNum btn_7 numero">7</button>
+        <button class="numero">7</button>
         <button class="btnNum btn_8 numero">8</button>
         <button class="btnNum btn_9 numero">9</button><br>
         <button class="btnNum btn_4 numero">4</button>
-        <button class="btnNum btn_5">5</button>
-        <button class="btnNum btn_6">6</button><br>
-        <button class="btnNum btn_1">1</button>
-        <button class="btnNum btn_2">2</button>
-        <button class="btnNum btn_3">3</button><br>
-        <button class="btnNum btn_0">0</button>
-        <button class="btnNum btn_00">00</button>
-        <button class="btnNum point">.</button>
+        <button class="btnNum btn_5 numero">5</button>
+        <button class="btnNum btn_6 numero">6</button><br>
+        <button class="btnNum btn_1 numero">1</button>
+        <button class="btnNum btn_2 numero">2</button>
+        <button class="btnNum btn_3 numero">3</button><br>
+        <button class="btnNum btn_0 numero">0</button>
+        <button class="btnNum btn_00 numero">00</button>
+        <button class="btnNum point numero">.</button>
         </div>
         <div class="calculator-right">
-        <button class="btnNum btn_CE">CE</button>
-        <button class="btnNum btn_AC">AC</button><br>
-        <button class="btnNum btn_sum">+</button>
-        <button class="btnNum btn_rest">-</button>
-        <button class="btnNum btn_mult">x</button><br>
-        <button class="btnNum btn_div">/</button>
+        <button class="btnNum btn_CE ">CE</button>
+        <button class="btnNum btn_AC ">AC</button><br>
+        <button class="btnNum btn_sum operador">+</button>
+        <button class="btnNum btn_rest operador">-</button>
+        <button class="btnNum btn_mult operador">x</button><br>
+        <button class="btnNum btn_div operador">/</button>
         <button class="btnNum btn_equal">=</button>
         </div>
       </form>
     </div>
-    <button id="btnPrueba">Click</button>
   </section> 
   </section>
   <footer>@CarlozMata</footer>  
 </body>
-<script src="./main_estilos.js"></script>
-<script src="./main_student.js"></script>
-<script src="./main_calculator.js"></script>
 </html>

@@ -61,6 +61,13 @@ header button {
   text-align: center; 
   
 }
+#valor-anterior {
+ background-color: aqua; 
+
+}
+#valor-actual {
+  background-color: aquamarine;
+}
 .calculator-left {
   padding: 10px;
 
