@@ -35,7 +35,6 @@
   </section>
   <section class="calculator">
     <h2>Calculadora</h2>
-      <form>
         <br><label>El resultado es:</label><br>
         <span id="result"></span><br> 
         <div class="calculator-box">
@@ -43,29 +42,28 @@
           <div class="display"></div>
           <div id="valor-anterior"></div>
           <div id="valor-actual"></div>
-        <button class="numero">7</button>
-        <button class="btnNum btn_8 numero">8</button>
-        <button class="btnNum btn_9 numero">9</button><br>
-        <button class="btnNum btn_4 numero">4</button>
-        <button class="btnNum btn_5 numero">5</button>
-        <button class="btnNum btn_6 numero">6</button><br>
-        <button class="btnNum btn_1 numero">1</button>
-        <button class="btnNum btn_2 numero">2</button>
-        <button class="btnNum btn_3 numero">3</button><br>
-        <button class="btnNum btn_0 numero">0</button>
-        <button class="btnNum btn_00 numero">00</button>
-        <button class="btnNum point numero">.</button>
+        <button type="button" class="numero">7</button>
+        <button type="button" class="numero">8</button>
+        <button type="button" class="numero">9</button><br>
+        <button type="button" class="numero">4</button>
+        <button type="button" class="numero">5</button>
+        <button type="button" class="numero">6</button><br>
+        <button type="button" class="numero">1</button>
+        <button type="button" class="numero">2</button>
+        <button type="button" class="numero">3</button><br>
+        <button type="button" class="numero">0</button>
+        <button type="button" class="numero">00</button>
+        <button type="button" class="numero">.</button>
         </div>
         <div class="calculator-right">
-        <button class="btnNum btn_CE ">CE</button>
-        <button class="btnNum btn_AC ">AC</button><br>
-        <button class="btnNum btn_sum operador">+</button>
-        <button class="btnNum btn_rest operador">-</button>
-        <button class="btnNum btn_mult operador">x</button><br>
-        <button class="btnNum btn_div operador">/</button>
-        <button class="btnNum btn_equal">=</button>
-        </div>
-      </form>
+        <button type="button" class="numero" onclick="display.borrarTodo()">C</button>
+        <button type="button" onclick="display.borrar()">&larr;</button><br>
+        <button type="button" class="operador" value="sumar">+</button>
+        <button type="button" class="operador" value="restar">-</button><br>
+        <button type="button" class="operador" value="multiplicar">X</button>
+        <button type="button" class="operador" value="dividir">%</button><br>
+        <button type="button" class="operador equal" value="igual">=</button>
+      </div>
     </div>
   </section> 
   </section>
