@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styless.css">
-  <script src="./main_estilos.js"></script>
-  <script src="./main_student.js"></script>
-  <script src="./main_calculator.js"></script>
-  <script src="./Calculadora.js"></script>
-  <script src="./display.js"></script>
-  <script src="./index.js" defer></script>
-    <title>Practica JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Lato:wght@300&family=Montserrat:wght@300;700&family=Parisienne&display=swap" rel="stylesheet">  <link rel="stylesheet" href="./css/styless.css">
+  <title>Practica JS</title>
 </head> 
 <body>
   <header id="backgroundHeader">
@@ -35,38 +33,67 @@
   </section>
   <section class="calculator">
     <h2>Calculadora</h2>
-        <br><label>El resultado es:</label><br>
-        <span id="result"></span><br> 
         <div class="calculator-box">
-        <div class="calculator-left">
-          <div class="display"></div>
-          <div id="valor-anterior"></div>
-          <div id="valor-actual"></div>
-        <button type="button" class="numero">7</button>
-        <button type="button" class="numero">8</button>
-        <button type="button" class="numero">9</button><br>
-        <button type="button" class="numero">4</button>
-        <button type="button" class="numero">5</button>
-        <button type="button" class="numero">6</button><br>
-        <button type="button" class="numero">1</button>
-        <button type="button" class="numero">2</button>
-        <button type="button" class="numero">3</button><br>
-        <button type="button" class="numero">0</button>
-        <button type="button" class="numero">00</button>
-        <button type="button" class="numero">.</button>
+          <div class="calculator-royal">
+            <div class="calculator-royal-top">
+              <div class="calculator-etiq">
+                <p class="p-royal">ROYAL</p><p class="p-r">®</p>
+                <p class="p-ce250">CE250/XE48</p>
+                <span>TWO WAY POWER</span>
+                <div>
+                  <p class="p-12">12</p>
+                  <p class="p-digit">DIGIT</p>
+                </div>
+              </div>            
+              <div class="calculator-royal-display">
+                <div id="valor-actual">123</div> 
+                <div id="valor-anterior">456</div>
+              </div>
+            </div>
+            <div class="calculator-royal-down">
+              <div class="calculator-left">
+                <button type="button" class="numero3">MRC</button>
+                <button type="button" class="numero3">M≡</button>
+                <button type="button" class="numero3">M+=</button><br>
+                <button type="button" class="operador">⟶</button>
+                <button type="button" class="operador">GT</button>
+                <button type="button" class="operador">+/-</button><br>
+                <button type="button" class="numero">7</button>
+                <button type="button" class="numero">8</button>
+                <button type="button" class="numero">9</button><br>
+                <button type="button" class="numero">4</button>
+                <button type="button" class="numero">5</button>
+                <button type="button" class="numero">6</button><br>
+                <button type="button" class="numero">1</button>
+                <button type="button" class="numero">2</button>
+                <button type="button" class="numero">3</button><br>
+                <button type="button" class="numero">0</button>
+                <button type="button" class="numero">00</button>
+                <button type="button" class="numero">.</button>
+                </div>
+              <div class="calculator-right">
+                <img src="./img/boton.png"></img><br>
+                <button type="button" class="numero2" onclick="display.borrarTodo()">CE</button>
+                <button type="button" class="numero2" onclick="display.borrar()">&larr;</button><br>
+                <button type="button" class="operador" value="porcentaje">%</button>
+                <button type="button" class="operador" value="raiz">√</button><br>
+                <button type="button" class="operador" value="multiplicar">x</button>
+                <button type="button" class="operador" value="restar">-</button><br>
+                <button type="button" class="operador sum" value="sumar">+</button>
+                <button type="button" class="operador divi" value="dividir">÷</button><br>
+                <button type="button" class="operador equal" value="igual">=</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="calculator-right">
-        <button type="button" class="numero" onclick="display.borrarTodo()">C</button>
-        <button type="button" onclick="display.borrar()">&larr;</button><br>
-        <button type="button" class="operador" value="sumar">+</button>
-        <button type="button" class="operador" value="restar">-</button><br>
-        <button type="button" class="operador" value="multiplicar">X</button>
-        <button type="button" class="operador" value="dividir">%</button><br>
-        <button type="button" class="operador equal" value="igual">=</button>
-      </div>
-    </div>
   </section> 
   </section>
   <footer>@CarlozMata</footer>  
+  <script src="./js/main_estilos.js"></script>
+  <script src="./js/main_student.js"></script>
+  <script src="./js/main_calculator.js" defer></script>
+  <script src="./js/Calculadora.js"></script>
+  <script src="./js/display.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
