@@ -35,7 +35,7 @@ function validarRadio(){
   for (var i=0; i<document.form1.genero.lenght; i++)
   {
     if(document.form1.genero[i].checked) {
-      alert("marco: "+document.form1.genero[i].value);
+      alert("marco: "+ document.form1.genero[i].value);
       s="si";
     }
   }
