@@ -22,25 +22,45 @@
 <section class="global"> 
 <!--ALUMNO--> 
   <section class="alumn">
-    <h2>Datos de Alumno</h2>
-    <form action="">
+    <h2>Datos Usuario Nuevo</h2><br>
+    <form action="" name="formulario1">
       <label>Ingresa tu Nombre:</label><br>
-      <input type="text" id="nombre" placeholder="¿Cual es tu nombre?"><br>
+      <input type="text" id="name" placeholder="¿Cual es tu nombre?"><br><br>
+      <label>Ingresa tu Apellido:</label><br>
+      <input type="text" id="lastName" placeholder="¿Cual es tu apellido?"><br><br>
+      <label>Ingresa tu Fecha de Nacimiento:</label><br>
+      <input type="date" id="birthday"><br><br>
+
+      <label>Ingresa tu Correo electronico:</label><br>
+      <input type="email" id="email" placeholder="Email"><br><br>
+
+      <label>Genero:</label><br>  
+      <input type="radio" name="genero" value="hombre">Hombre<br> 
+      <input type="radio" name="genero" value="mujer">Mujer<br> 
+      <input type="radio" name="genero" value="espia">Espia Ruso..<br><br> 
+
+      <input type="button" value="Enviar mensaje" onclick="validarRadio();"><br><br>
+
+
+      <label>Generos Musicales favoritos:</label><br>
+      <input type="checkbox" id="rock">Rock<br>
+      <input type="checkbox" id="pop">Pop<br>
+      <input type="checkbox" id="metal">Metal<br>
+      <input type="checkbox" id="Baladas">Baladas<br><br>
+
+      <label>¿Que tan feliz eres? (Izquierda :c  ó  Derecha :D</label><br>
+      <input type="range" id="happy"><br>
 
       <label for="mensaje">Escribe tu mensaje:</label><br>
       <textarea id="mensaje" cols="30" rows="5"></textarea><br>
 
-      <input type="button" value="Enviar mensaje" onclick="leeTexto()">
+      <input type="button" value="Enviar mensaje" onclick="leeTexto();"><br><br>
+
+      <hr>
+
+      <div id="respuesta"></div>
 
     </form>
-
-
-
-
-    <button type="button" id="btnPrintName">Tu nombre es: </button>
-    <div id="printName">Nombre</div> 
-    <button type="button" id="btnPrintLastName">Tu apellido es:</button>
-    <div id="printLastName">Apellido</div> 
   </section>
 <!--CALCULADORA--> 
 <section class="calculator">

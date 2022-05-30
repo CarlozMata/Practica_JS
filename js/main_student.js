@@ -2,27 +2,44 @@
 function leeTexto() {
 
 
-var nombre = document.getElementById('nombre').value;
+var name = document.getElementById('name').value;
+var lastName = document.getElementById('lastName').value;
+var birthday = document.getElementById('birthday').value;
 var mensaje = document.getElementById('mensaje').value;
+
 
 //Imprimir en consola
 /*
 console.log(nombre);
 console.log(mensaje);
 */
-
+ 
 //Para mostrar por alert
 //  alert(nombre + ": " + mensaje);
 
 //Mostramos información en etiqueta div
 //innerHTML: Donde encuentre el ID respuesta inserto codigo html.
-document.getElementById('respuesta').innerHTML= nombre + " tu mensaje " + mensaje + "<br>Ha sido enviado!";
+document.getElementById('respuesta').innerHTML= "Hola " + name + " " + lastName + " yo se mucho de ti, tu naciste en " + birthday +" y tu mensaje " + mensaje + "<br>Saludos!";
   
 
-if(nombre=="carlos") {
-  alert("Hola master");
+if(name=="Carlos") {
+  alert("Hola Jefaso Maestro!! :D");
 } else {
-  alert("Hola novato :)")
+  alert("Tu no eres Carlos.... Hola Novato :)")
 }
 
+}
+
+function validarRadio(){
+  var s="no";
+  for (var i=0; i<document.form1.genero.lenght; i++)
+  {
+    if(document.form1.genero[i].checked) {
+      alert("marco: "+document.form1.genero[i].value);
+      s="si";
+    }
+  }
+  if (s=="no") {
+    alert("Debe seleccionar un genero");
+  }
 }
