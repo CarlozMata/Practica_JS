@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Lato:wght@300&family=Montserrat:wght@300;700&family=Parisienne&display=swap" rel="stylesheet">  <link rel="stylesheet" href="./css/styless.css">
-  <title>Practica JS</title>
+  <title>APPS JS</title>
 </head> 
 <body>
   <header id="backgroundHeader">
@@ -17,21 +17,33 @@
       <h1>Programa Web</h1>
       <button onclick="changeColor('blue');">Azul</button>
       <button onclick="changeColor('red');">Rojo</button>
-    </div>
-  </header>
-<section class="global">  
+    </div> 
+  </header>  
+<section class="global"> 
+<!--ALUMNO--> 
   <section class="alumn">
     <h2>Datos de Alumno</h2>
-    <form action="" method="post">
-      <label>Ingresa tu Nombre:</label>
-      <input type="text" placeholder="¿Cual es tu nombre?" name="name" class="data">
-      <label>Ingresa tu Apellido:</label>
-      <input type="text" placeholder="¿Cual es tu apellido?" name="name" class="data">
-      <input type="submit" class="btnSave" name="=" value="Save">
+    <form action="">
+      <label>Ingresa tu Nombre:</label><br>
+      <input type="text" id="nombre" placeholder="¿Cual es tu nombre?"><br>
+
+      <label for="mensaje">Escribe tu mensaje:</label><br>
+      <textarea id="mensaje" cols="30" rows="5"></textarea><br>
+
+      <input type="button" value="Enviar mensaje" onclick="leeTexto()">
 
     </form>
+
+
+
+
+    <button type="button" id="btnPrintName">Tu nombre es: </button>
+    <div id="printName">Nombre</div> 
+    <button type="button" id="btnPrintLastName">Tu apellido es:</button>
+    <div id="printLastName">Apellido</div> 
   </section>
-  <section class="calculator">
+<!--CALCULADORA--> 
+<section class="calculator">
     <h2>Calculadora</h2>
         <div class="calculator-box">
           <div class="calculator-royal">
@@ -91,7 +103,6 @@
   <footer>@CarlozMata</footer>  
   <script src="./js/main_estilos.js"></script>
   <script src="./js/main_student.js"></script>
-  <script src="./js/main_calculator.js" defer></script>
   <script src="./js/Calculadora.js"></script>
   <script src="./js/display.js"></script>
   <script src="./js/index.js"></script>
