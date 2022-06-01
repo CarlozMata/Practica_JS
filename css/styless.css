@@ -4,7 +4,7 @@
   box-sizing: border-box; 
 }
 html {
-  min-width: 470px;
+  min-width: 500px;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -15,7 +15,7 @@ header {
   background-color: #E6E6FA; 
   height: 100px;
   text-align: center;
-  min-width: 470px;
+  min-width: 500px;
   border: 1px solid black;
   margin-bottom: 25px;
 } 
@@ -23,7 +23,6 @@ header div {
   width: 100%;
   display: flex;
   flex-direction: column;
-
 }
 header button {
   width: 40px;
@@ -41,16 +40,27 @@ header button {
 .usr h2 {
   text-align: center;
 }
-.usr {
+.usr { 
   background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(239,249,249,1) 0%, rgba(182,199,226,1) 100.2% );
   padding: 10px;
-  min-width: 470px;
+  width: 500px;
   height: auto;
   border: 1px solid gray; 
   box-shadow: 0px 5px 20px 5px gray;  
 } 
+form {
+  display: block;
 
-
+}
+#name, #lastName {
+  width: 150px;
+}
+#birthday {
+  width: 135px;
+}
+#email {
+  width: 250px;
+}
 
 /*SECTION CALCULATOR*/
 .calculator { 
@@ -59,7 +69,8 @@ header button {
   justify-content: center;
   text-align: center;
   background-color:transparent; 
-  min-width: 470px;
+  min-width: 500px; 
+  max-width: 500px;
   height: 600px;
 }
 .calculator-box {
@@ -247,7 +258,7 @@ span {
   font-weight: bold;
 }
 .divi {
-  position: fixed;
+  position: absolute;
   margin: 0px 0px 0px 5px;
 }
 .equal {
@@ -261,8 +272,9 @@ span {
 
 /*FOOTER*/
 footer {
+  margin-top: 25px;
   background-color:turquoise;
-  min-width: 470px;
+  min-width: 350px;
 
 }
 
